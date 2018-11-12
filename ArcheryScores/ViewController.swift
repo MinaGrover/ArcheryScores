@@ -51,6 +51,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var roundTenArrowThreeTF: UITextField!
     
     
+    @IBOutlet weak var roundOneTotal: UILabel!
+    @IBOutlet weak var postRoundOneTotal: UILabel!
+    
+    @IBOutlet weak var roundTwoTotal: UILabel!
+    @IBOutlet weak var postRoundTwoTotal: UILabel!
+    
+    @IBOutlet weak var roundThreeTotal: UILabel!
+    @IBOutlet weak var postRoundThreeTotal: UILabel!
+    
+    @IBOutlet weak var roundFourTotal: UILabel!
+    @IBOutlet weak var postRoundFourTotal: UILabel!
+    
+    
+    
+    
     
     
     override func viewDidLoad() {
