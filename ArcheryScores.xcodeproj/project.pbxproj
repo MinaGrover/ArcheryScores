@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1E55268219B430F0011377A /* FullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E55267219B430F0011377A /* FullTableViewController.swift */; };
 		C1E6BDA62199EE2700403AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6BDA52199EE2400403AE6 /* AppDelegate.swift */; };
 		C1E6BDA82199EE2700403AE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6BDA72199EE2700403AE6 /* ViewController.swift */; };
 		C1E6BDAB2199EE2700403AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E6BDA92199EE2700403AE6 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C1E55267219B430F0011377A /* FullTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTableViewController.swift; sourceTree = "<group>"; };
 		C1E6BDA22199EE2400403AE6 /* ArcheryScores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcheryScores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E6BDA52199EE2400403AE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1E6BDA72199EE2700403AE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				C1E6BDA52199EE2400403AE6 /* AppDelegate.swift */,
 				C1E6BDA72199EE2700403AE6 /* ViewController.swift */,
+				C1E55267219B430F0011377A /* FullTableViewController.swift */,
 				C1E6BDA92199EE2700403AE6 /* Main.storyboard */,
 				C1E6BDAF2199EE2C00403AE6 /* Assets.xcassets */,
 				C1E6BDB12199EE2C00403AE6 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				C1E6BDA82199EE2700403AE6 /* ViewController.swift in Sources */,
 				C1E6BDAE2199EE2700403AE6 /* ArcheryScores.xcdatamodeld in Sources */,
+				C1E55268219B430F0011377A /* FullTableViewController.swift in Sources */,
 				C1E6BDA62199EE2700403AE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
