@@ -127,6 +127,85 @@ class FullTableViewController: UIViewController {
     }
     
     
+    @IBAction func roundOneButtonPressed(_ sender: UIButton)
+    {
+        firstArrowTF.text = roundOneArrowOneL.text
+        secondArrowTF.text = roundOneArrowTwoL.text
+        thirdArrowTF.text = roundOneArrowThreeL.text
+        roundNumL.text = "Round \(roundOneButton.title)"
+    }
+    
+    @IBAction func roundTwoButtonPressed(sender: UIButton)
+    {
+        firstArrowTF.text = roundTwoArrowOneL.text
+        secondArrowTF.text = roundTwoArrowTwoL.text
+        thirdArrowTF.text = roundTwoArrowThreeL.text
+        roundNumL.text = "Round \(roundTwoButton.title)"
+    }
+    
+    @IBAction func roundThreeButtonPressed(sender: UIButton)
+    {
+        firstArrowTF.text = roundThreeArrowOneL.text
+        secondArrowTF.text = roundThreeArrowTwoL.text
+        thirdArrowTF.text = roundThreeArrowThreeL.text
+        roundNumL.text = "Round \(roundThreeButton.title)"
+    }
+    
+    @IBAction func roundFourButtonPressed(sender: UIButton)
+    {
+        firstArrowTF.text = roundFourArrowOneL.text
+        secondArrowTF.text = roundFourArrowTwoL.text
+        thirdArrowTF.text = roundFourArrowThreeL.text
+        roundNumL.text = "Round \(roundFourButton.title)"
+    }
+    
+    @IBAction func roundFiveButtonPressed(sender: UIButton)
+    {
+        firstArrowTF.text = roundFiveArrowOneL.text
+        secondArrowTF.text = roundFiveArrowTwoL.text
+        thirdArrowTF.text = roundFiveArrowThreeL.text
+        roundNumL.text = "Round \(roundFiveButton.title)"
+    }
+    
+    @IBAction func roundSixButtonPressed(sender: UIButton)
+    {
+        firstArrowTF.text = roundSixArrowOneL.text
+        secondArrowTF.text = roundSixArrowTwoL.text
+        thirdArrowTF.text = roundSixArrowThreeL.text
+        roundNumL.text = "Round \(roundSixButton.title)"
+    }
+    
+    @IBAction func roundSevenButtonPressed(sender: UIButton) // --------------- vvvvv -------------
+    {
+        firstArrowTF.text = roundOneArrowOneL.text
+        secondArrowTF.text = roundOneArrowTwoL.text
+        thirdArrowTF.text = roundOneArrowThreeL.text
+        roundNumL.text = "Round \(roundOneButton.title)"
+    }
+    
+    @IBAction func roundEightButtonPressed(sender: UIButton)
+    {
+        firstArrowTF.text = roundOneArrowOneL.text
+        secondArrowTF.text = roundOneArrowTwoL.text
+        thirdArrowTF.text = roundOneArrowThreeL.text
+        roundNumL.text = "Round \(roundOneButton.title)"
+    }
+  
+    @IBAction func roundNineButtonPressed(sender: UIButton)
+    {
+        firstArrowTF.text = roundOneArrowOneL.text
+        secondArrowTF.text = roundOneArrowTwoL.text
+        thirdArrowTF.text = roundOneArrowThreeL.text
+        roundNumL.text = "Round \(roundOneButton.title)"
+    }
+  
+    @IBAction func roundTenButtonPressed(sender: UIButton)
+    {
+        firstArrowTF.text = roundOneArrowOneL.text
+        secondArrowTF.text = roundOneArrowTwoL.text
+        thirdArrowTF.text = roundOneArrowThreeL.text
+        roundNumL.text = "Round \(roundOneButton.title)"
+    }
     
     
     
