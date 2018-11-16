@@ -18,6 +18,16 @@ class FullTableViewController: UIViewController {
     
     
     
+    @IBOutlet weak var roundOneButton: UIButton!
+    @IBOutlet weak var roundTwoButton: UIButton!
+    @IBOutlet weak var roundThreeButton: UIButton!
+    @IBOutlet weak var roundFourButton: UIButton!
+    @IBOutlet weak var roundFiveButton: UIButton!
+    @IBOutlet weak var roundSixButton: UIButton!
+    @IBOutlet weak var roundSevenButton: UIButton!
+    @IBOutlet weak var roundEightButton: UIButton!
+    @IBOutlet weak var roundNineButton: UIButton!
+    @IBOutlet weak var roundTenButton: UIButton!
     
     
     @IBOutlet weak var roundOneArrowOneL: UILabel!
@@ -93,11 +103,26 @@ class FullTableViewController: UIViewController {
     
     var roundsLabels = [Array<UILabel>]()
     
-    
+    var roundButtons = [UIButton]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        roundOneLabels += [roundOneArrowOneL, roundOneArrowTwoL, roundOneArrowThreeL, roundOneTotalL, postRoundOneTotalL]
+        roundTwoLabels += [roundTwoArrowOneL, roundTwoArrowTwoL, roundTwoArrowThreeL, roundTwoTotalL, postRoundTwoTotalL]
+        roundThreeLabels += [roundThreeArrowOneL, roundThreeArrowTwoL, roundThreeArrowThreeL, roundThreeTotalL, postRoundThreeTotalL]
+        roundFourLabels += [roundFourArrowOneL, roundFourArrowTwoL, roundFourArrowThreeL, roundFourTotalL, postRoundFourTotalL]
+        roundFiveLabels += [roundFiveArrowOneL, roundFiveArrowTwoL, roundFiveArrowThreeL, roundFiveTotalL, postRoundFiveTotalL]
+        roundSixLabels += [roundSixArrowOneL, roundSixArrowTwoL, roundSixArrowThreeL, roundSixTotalL, postRoundSixTotalL]
+        roundSevenLabels += [roundSevenArrowOneL, roundSevenArrowTwoL, roundSevenArrowThreeL, roundSevenTotalL, postRoundSevenTotalL]
+        roundEightLabels += [roundEightArrowOneL, roundEightArrowTwoL, roundEightArrowThreeL, roundEightTotalL, postRoundEightTotalL]
+        roundNineLabels += [roundNineArrowOneL, roundNineArrowTwoL, roundNineArrowThreeL, roundNineTotalL, postRoundNineTotalL]
+        roundTenLabels += [roundTenArrowOneL, roundTenArrowTwoL, roundTenArrowThreeL, roundTenTotalL, postRoundTenTotalL]
+        
+        roundsLabels += [roundOneLabels, roundTwoLabels, roundThreeLabels, roundFourLabels, roundFiveLabels, roundSixLabels, roundSevenLabels, roundEightLabels, roundNineLabels, roundTenLabels]
+        
+        roundButtons += [roundOneButton, roundTwoButton, roundThreeButton, roundFourButton, roundFiveButton, roundSixButton, roundSevenButton, roundEightButton, roundNineButton, roundTenButton]
+        
         // Do any additional setup after loading the view.
     }
     
