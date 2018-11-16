@@ -18,6 +18,8 @@ class FullTableViewController: UIViewController {
     
     
     
+    
+    
     @IBOutlet weak var roundOneArrowOneL: UILabel!
     @IBOutlet weak var roundTwoArrowOneL: UILabel!
     @IBOutlet weak var roundThreeArrowOneL: UILabel!
@@ -75,6 +77,21 @@ class FullTableViewController: UIViewController {
     @IBOutlet weak var postRoundEightTotalL: UILabel!
     @IBOutlet weak var postRoundNineTotalL: UILabel!
     @IBOutlet weak var postRoundTenTotalL: UILabel!
+    
+    
+    
+    var roundOneLabels = [UILabel]()
+    var roundTwoLabels = [UILabel]()
+    var roundThreeLabels = [UILabel]()
+    var roundFourLabels = [UILabel]()
+    var roundFiveLabels = [UILabel]()
+    var roundSixLabels = [UILabel]()
+    var roundSevenLabels = [UILabel]()
+    var roundEightLabels = [UILabel]()
+    var roundNineLabels = [UILabel]()
+    var roundTenLabels = [UILabel]()
+    
+    var roundsLabels = [Array<UILabel>]()
     
     
     
