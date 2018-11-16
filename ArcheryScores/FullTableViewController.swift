@@ -11,6 +11,13 @@ import UIKit
 class FullTableViewController: UIViewController {
 
     
+    @IBOutlet weak var roundNumL: UILabel!
+    @IBOutlet weak var firstArrowTF: UITextField!
+    @IBOutlet weak var secondArrowTF: UITextField!
+    @IBOutlet weak var thirdArrowTF: UITextField!
+    
+    
+    
     @IBOutlet weak var roundOneArrowOneL: UILabel!
     @IBOutlet weak var roundTwoArrowOneL: UILabel!
     @IBOutlet weak var roundThreeArrowOneL: UILabel!
@@ -43,6 +50,33 @@ class FullTableViewController: UIViewController {
     @IBOutlet weak var roundEightArrowThreeL: UILabel!
     @IBOutlet weak var roundNineArrowThreeL: UILabel!
     @IBOutlet weak var roundTenArrowThreeL: UILabel!
+    
+    
+    
+    @IBOutlet weak var roundOneTotalL: UILabel!
+    @IBOutlet weak var roundTwoTotalL: UILabel!
+    @IBOutlet weak var roundThreeTotalL: UILabel!
+    @IBOutlet weak var roundFourTotalL: UILabel!
+    @IBOutlet weak var roundFiveTotalL: UILabel!
+    @IBOutlet weak var roundSixTotalL: UILabel!
+    @IBOutlet weak var roundSevenTotalL: UILabel!
+    @IBOutlet weak var roundEightTotalL: UILabel!
+    @IBOutlet weak var roundNineTotalL: UILabel!
+    @IBOutlet weak var roundTenTotalL: UILabel!
+    
+    
+    @IBOutlet weak var postRoundOneTotalL: UILabel!
+    @IBOutlet weak var postRoundTwoTotalL: UILabel!
+    @IBOutlet weak var postRoundThreeTotalL: UILabel!
+    @IBOutlet weak var postRoundFourTotalL: UILabel!
+    @IBOutlet weak var postRoundFiveTotalL: UILabel!
+    @IBOutlet weak var postRoundSixTotalL: UILabel!
+    @IBOutlet weak var postRoundSevenTotalL: UILabel!
+    @IBOutlet weak var postRoundEightTotalL: UILabel!
+    @IBOutlet weak var postRoundNineTotalL: UILabel!
+    @IBOutlet weak var postRoundTenTotalL: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
