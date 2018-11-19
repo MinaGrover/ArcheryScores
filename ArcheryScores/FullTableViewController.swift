@@ -225,11 +225,15 @@ class FullTableViewController: UIViewController {
         currentRoundLabels[0].text = firstArrowTF.text
         currentRoundLabels[1].text = secondArrowTF.text
         currentRoundLabels[2].text = thirdArrowTF.text
-        currentRoundLabels[3].text = firstArrowTF.text! + secondArrowTF.text! + thirdArrowTF.text!
+        var roundTotal = 0
+        roundTotal = Int(firstArrowTF.text!)! + Int(secondArrowTF.text!)! + Int(thirdArrowTF.text!)!
+        currentRoundLabels[3].text = "\(roundTotal)"
         if currentRoundNum != 0
         {
             let prevRoundLabels = roundsLabels[currentRoundNum-1]
-            currentRoundLabels[4].text = prevRoundLabels[4].text! + currentRoundLabels[3].text!
+            var totalTotal = 0
+            totalTotal = Int(prevRoundLabels[4].text!)! + Int(currentRoundLabels[3].text!)!
+            currentRoundLabels[4].text = "\(totalTotal)"
         }
         else
         {
