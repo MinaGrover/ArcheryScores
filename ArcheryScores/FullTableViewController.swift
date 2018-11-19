@@ -16,7 +16,7 @@ class FullTableViewController: UIViewController {
     @IBOutlet weak var secondArrowTF: UITextField!
     @IBOutlet weak var thirdArrowTF: UITextField!
     
-    
+    var currentRoundNum = 0
     
     @IBOutlet weak var roundOneButton: UIButton!
     @IBOutlet weak var roundTwoButton: UIButton!
@@ -133,6 +133,7 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
         roundNumL.text = "Round \(roundOneButton.title)"
+        currentRoundNum = 0
     }
     
     @IBAction func roundTwoButtonPressed(sender: UIButton)
@@ -141,6 +142,7 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundTwoArrowTwoL.text
         thirdArrowTF.text = roundTwoArrowThreeL.text
         roundNumL.text = "Round \(roundTwoButton.title)"
+        currentRoundNum = 1
     }
     
     @IBAction func roundThreeButtonPressed(sender: UIButton)
@@ -149,6 +151,7 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundThreeArrowTwoL.text
         thirdArrowTF.text = roundThreeArrowThreeL.text
         roundNumL.text = "Round \(roundThreeButton.title)"
+        currentRoundNum = 2
     }
     
     @IBAction func roundFourButtonPressed(sender: UIButton)
@@ -157,6 +160,7 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundFourArrowTwoL.text
         thirdArrowTF.text = roundFourArrowThreeL.text
         roundNumL.text = "Round \(roundFourButton.title)"
+        currentRoundNum = 3
     }
     
     @IBAction func roundFiveButtonPressed(sender: UIButton)
@@ -165,6 +169,7 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundFiveArrowTwoL.text
         thirdArrowTF.text = roundFiveArrowThreeL.text
         roundNumL.text = "Round \(roundFiveButton.title)"
+        currentRoundNum = 4
     }
     
     @IBAction func roundSixButtonPressed(sender: UIButton)
@@ -173,6 +178,7 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundSixArrowTwoL.text
         thirdArrowTF.text = roundSixArrowThreeL.text
         roundNumL.text = "Round \(roundSixButton.title)"
+        currentRoundNum = 5
     }
     
     @IBAction func roundSevenButtonPressed(sender: UIButton)
@@ -181,6 +187,7 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
         roundNumL.text = "Round \(roundSevenButton.title)"
+        currentRoundNum = 6
     }
     
     @IBAction func roundEightButtonPressed(sender: UIButton)
@@ -189,6 +196,7 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
         roundNumL.text = "Round \(roundEightButton.title)"
+        currentRoundNum = 7
     }
   
     @IBAction func roundNineButtonPressed(sender: UIButton)
@@ -197,6 +205,7 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
         roundNumL.text = "Round \(roundNineButton.title)"
+        currentRoundNum = 8
     }
   
     @IBAction func roundTenButtonPressed(sender: UIButton)
@@ -205,9 +214,20 @@ class FullTableViewController: UIViewController {
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
         roundNumL.text = "Round \(roundTenButton.title)"
+        currentRoundNum = 9
     }
     
     
+    @IBAction func setButtonPressed(_ sender: UIButton)
+    {
+        let currentRoundLabels = roundsLabels[currentRoundNum]
+        currentRoundLabels[0].text = firstArrowTF.text
+        currentRoundLabels[1].text = secondArrowTF.text
+        currentRoundLabels[2].text = thirdArrowTF.text
+        currentRoundLabels[3].text = firstArrowTF.text + secondArrowTF.text + thirdArrowTF.text
+        currentRoundLabels[4].text = roundsLabels[currentRoundNum-1[4]].text
+        
+    }
     
     
     
