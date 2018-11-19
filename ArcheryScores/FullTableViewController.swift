@@ -221,11 +221,20 @@ class FullTableViewController: UIViewController {
     @IBAction func setButtonPressed(_ sender: UIButton)
     {
         let currentRoundLabels = roundsLabels[currentRoundNum]
+       
         currentRoundLabels[0].text = firstArrowTF.text
         currentRoundLabels[1].text = secondArrowTF.text
         currentRoundLabels[2].text = thirdArrowTF.text
-        currentRoundLabels[3].text = firstArrowTF.text + secondArrowTF.text + thirdArrowTF.text
-        currentRoundLabels[4].text = roundsLabels[currentRoundNum-1[4]].text
+        currentRoundLabels[3].text = firstArrowTF.text! + secondArrowTF.text! + thirdArrowTF.text!
+        if currentRoundNum != 0
+        {
+            let prevRoundLabels = roundsLabels[currentRoundNum-1]
+            currentRoundLabels[4].text = prevRoundLabels[4].text! + currentRoundLabels[3].text!
+        }
+        else
+        {
+            currentRoundLabels[4].text = currentRoundLabels[3].text
+        }
         
     }
     
