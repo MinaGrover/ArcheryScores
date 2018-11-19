@@ -175,12 +175,12 @@ class FullTableViewController: UIViewController {
         roundNumL.text = "Round \(roundSixButton.title)"
     }
     
-    @IBAction func roundSevenButtonPressed(sender: UIButton) // --------------- vvvvv -------------
+    @IBAction func roundSevenButtonPressed(sender: UIButton)
     {
         firstArrowTF.text = roundOneArrowOneL.text
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
-        roundNumL.text = "Round \(roundOneButton.title)"
+        roundNumL.text = "Round \(roundSevenButton.title)"
     }
     
     @IBAction func roundEightButtonPressed(sender: UIButton)
@@ -188,7 +188,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundOneArrowOneL.text
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
-        roundNumL.text = "Round \(roundOneButton.title)"
+        roundNumL.text = "Round \(roundEightButton.title)"
     }
   
     @IBAction func roundNineButtonPressed(sender: UIButton)
@@ -196,7 +196,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundOneArrowOneL.text
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
-        roundNumL.text = "Round \(roundOneButton.title)"
+        roundNumL.text = "Round \(roundNineButton.title)"
     }
   
     @IBAction func roundTenButtonPressed(sender: UIButton)
@@ -204,7 +204,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundOneArrowOneL.text
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
-        roundNumL.text = "Round \(roundOneButton.title)"
+        roundNumL.text = "Round \(roundTenButton.title)"
     }
     
     
