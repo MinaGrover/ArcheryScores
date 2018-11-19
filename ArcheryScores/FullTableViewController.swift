@@ -132,7 +132,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundOneArrowOneL.text
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
-        roundNumL.text = "Round \(roundOneButton.title)"
+        roundNumL.text = "Round \(roundOneButton.titleLabel?.text ?? "0")"
         currentRoundNum = 0
     }
     
@@ -141,7 +141,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundTwoArrowOneL.text
         secondArrowTF.text = roundTwoArrowTwoL.text
         thirdArrowTF.text = roundTwoArrowThreeL.text
-        roundNumL.text = "Round \(roundTwoButton.title)"
+        roundNumL.text = "Round \(roundTwoButton.titleLabel?.text ?? "0")"
         currentRoundNum = 1
     }
     
@@ -150,7 +150,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundThreeArrowOneL.text
         secondArrowTF.text = roundThreeArrowTwoL.text
         thirdArrowTF.text = roundThreeArrowThreeL.text
-        roundNumL.text = "Round \(roundThreeButton.title)"
+        roundNumL.text = "Round \(roundThreeButton.titleLabel?.text ?? "0")"
         currentRoundNum = 2
     }
     
@@ -159,7 +159,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundFourArrowOneL.text
         secondArrowTF.text = roundFourArrowTwoL.text
         thirdArrowTF.text = roundFourArrowThreeL.text
-        roundNumL.text = "Round \(roundFourButton.title)"
+        roundNumL.text = "Round \(roundFourButton.titleLabel?.text ?? "0")"
         currentRoundNum = 3
     }
     
@@ -168,7 +168,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundFiveArrowOneL.text
         secondArrowTF.text = roundFiveArrowTwoL.text
         thirdArrowTF.text = roundFiveArrowThreeL.text
-        roundNumL.text = "Round \(roundFiveButton.title)"
+        roundNumL.text = "Round \(roundFiveButton.titleLabel?.text ?? "0")"
         currentRoundNum = 4
     }
     
@@ -177,7 +177,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundSixArrowOneL.text
         secondArrowTF.text = roundSixArrowTwoL.text
         thirdArrowTF.text = roundSixArrowThreeL.text
-        roundNumL.text = "Round \(roundSixButton.title)"
+        roundNumL.text = "Round \(roundSixButton.titleLabel?.text ?? "0")"
         currentRoundNum = 5
     }
     
@@ -186,7 +186,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundOneArrowOneL.text
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
-        roundNumL.text = "Round \(roundSevenButton.title)"
+        roundNumL.text = "Round \(roundSevenButton.titleLabel?.text ?? "0")"
         currentRoundNum = 6
     }
     
@@ -195,7 +195,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundOneArrowOneL.text
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
-        roundNumL.text = "Round \(roundEightButton.title)"
+        roundNumL.text = "Round \(roundEightButton.titleLabel?.text ?? "0")"
         currentRoundNum = 7
     }
   
@@ -204,7 +204,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundOneArrowOneL.text
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
-        roundNumL.text = "Round \(roundNineButton.title)"
+        roundNumL.text = "Round \(roundNineButton.titleLabel?.text ?? "0")"
         currentRoundNum = 8
     }
   
@@ -213,7 +213,7 @@ class FullTableViewController: UIViewController {
         firstArrowTF.text = roundOneArrowOneL.text
         secondArrowTF.text = roundOneArrowTwoL.text
         thirdArrowTF.text = roundOneArrowThreeL.text
-        roundNumL.text = "Round \(roundTenButton.title)"
+        roundNumL.text = "Round \(roundTenButton.titleLabel?.text ?? "0")"
         currentRoundNum = 9
     }
     
