@@ -243,6 +243,10 @@ class FullTableViewController: UIViewController {
     }
     
     
+    @IBAction func bgdScreenTouched(_ sender: UITapGestureRecognizer)
+    {
+        view.endEditing(true)
+    }
     
 
     /*
