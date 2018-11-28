@@ -21,6 +21,11 @@ class AllTheScores: Codable {
     var roundNineScores = [0, 0, 0, 0, 0]
     var roundTenScores = [0, 0, 0, 0, 0]
     
+    var allRounds = [Array<Int>]()
     
-    
+    init()
+    {
+        allRounds = [roundOneScores, roundTwoScores, roundThreeScores, roundFourScores, roundFiveScores, roundSixScores, roundSevenScores, roundEightScores, roundNineScores, roundTenScores]
+    }
+
 }

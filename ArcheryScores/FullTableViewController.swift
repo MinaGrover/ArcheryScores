@@ -105,6 +105,8 @@ class FullTableViewController: UIViewController {
     
     var roundButtons = [UIButton]()
     
+    var currentAllScores = AllTheScores()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -240,6 +242,13 @@ class FullTableViewController: UIViewController {
             currentRoundLabels[4].text = currentRoundLabels[3].text
         }
         
+        currentAllScores.allRounds[currentRoundNum][0] = Int(firstArrowTF.text!)!
+        currentAllScores.allRounds[currentRoundNum][1] = Int(secondArrowTF.text!)!
+        currentAllScores.allRounds[currentRoundNum][2] = Int(thirdArrowTF.text!)!
+        currentAllScores.allRounds[currentRoundNum][3] = Int(firstArrowTF.text!)! + Int(secondArrowTF.text!)! + Int(thirdArrowTF.text!)!
+        currentAllScores.allRounds[currentRoundNum][4] = Int(currentRoundLabels[4].text!)!
+        
+        print(currentAllScores.allRounds[currentRoundNum][4]) //"(currentAllScores.allRounds[currentRoundNum][4])"
     }
     
     
