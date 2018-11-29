@@ -261,6 +261,7 @@ class FullTableViewController: UIViewController {
         
         print(currentAllScores.allRounds[currentRoundNum][4]) //"(currentAllScores.allRounds[currentRoundNum][4])"
         
+        checkTotals()
         saveData()
     }
     
@@ -343,6 +344,20 @@ class FullTableViewController: UIViewController {
         
     }
     
+    func checkTotals()
+    {
+        postRoundOneTotalL.text = roundOneTotalL.text
+        postRoundTwoTotalL.text = "\(Int(postRoundOneTotalL.text!)! + Int(roundTwoTotalL.text!)!)"
+        postRoundThreeTotalL.text = "\(Int(postRoundTwoTotalL.text!)! + Int(roundThreeTotalL.text!)!)"
+        postRoundFourTotalL.text = "\(Int(postRoundThreeTotalL.text!)! + Int(roundFourTotalL.text!)!)"
+        postRoundFiveTotalL.text = "\(Int(postRoundFourTotalL.text!)! + Int(roundFiveTotalL.text!)!)"
+        postRoundSixTotalL.text = "\(Int(postRoundFiveTotalL.text!)! + Int(roundSixTotalL.text!)!)"
+        postRoundSevenTotalL.text = "\(Int(postRoundSixTotalL.text!)! + Int(roundSevenTotalL.text!)!)"
+        postRoundEightTotalL.text = "\(Int(postRoundSevenTotalL.text!)! + Int(roundEightTotalL.text!)!)"
+        postRoundNineTotalL.text = "\(Int(postRoundEightTotalL.text!)! + Int(roundNineTotalL.text!)!)"
+        postRoundTenTotalL.text = "\(Int(postRoundNineTotalL.text!)! + Int(roundTenTotalL.text!)!)"
+        
+    }
 
     /*
     // MARK: - Navigation
