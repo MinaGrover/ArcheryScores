@@ -10,6 +10,8 @@ import UIKit
 
 class FullTableViewController: UIViewController {
 
+    let defaults = UserDefaults.standard
+    
     
     @IBOutlet weak var roundNumL: UILabel!
     @IBOutlet weak var firstArrowTF: UITextField!
@@ -125,6 +127,15 @@ class FullTableViewController: UIViewController {
         
         roundButtons += [roundOneButton, roundTwoButton, roundThreeButton, roundFourButton, roundFiveButton, roundSixButton, roundSevenButton, roundEightButton, roundNineButton, roundTenButton]
         
+        if let savedDave = defaults.object(forKey: "data") as? Data
+        {
+            if let decoded = try? JSONDecoder().decode(AllTheScores.self, from: savedDave)
+            {
+                currentAllScores = decoded
+                setAll()
+            }
+        }
+        
         // Do any additional setup after loading the view.
     }
     
@@ -185,36 +196,36 @@ class FullTableViewController: UIViewController {
     
     @IBAction func roundSevenButtonPressed(sender: UIButton)
     {
-        firstArrowTF.text = roundOneArrowOneL.text
-        secondArrowTF.text = roundOneArrowTwoL.text
-        thirdArrowTF.text = roundOneArrowThreeL.text
+        firstArrowTF.text = roundSevenArrowOneL.text
+        secondArrowTF.text = roundSevenArrowTwoL.text
+        thirdArrowTF.text = roundSevenArrowThreeL.text
         roundNumL.text = "Round \(roundSevenButton.titleLabel?.text ?? "0")"
         currentRoundNum = 6
     }
     
     @IBAction func roundEightButtonPressed(sender: UIButton)
     {
-        firstArrowTF.text = roundOneArrowOneL.text
-        secondArrowTF.text = roundOneArrowTwoL.text
-        thirdArrowTF.text = roundOneArrowThreeL.text
+        firstArrowTF.text = roundEightArrowOneL.text
+        secondArrowTF.text = roundEightArrowTwoL.text
+        thirdArrowTF.text = roundEightArrowThreeL.text
         roundNumL.text = "Round \(roundEightButton.titleLabel?.text ?? "0")"
         currentRoundNum = 7
     }
   
     @IBAction func roundNineButtonPressed(sender: UIButton)
     {
-        firstArrowTF.text = roundOneArrowOneL.text
-        secondArrowTF.text = roundOneArrowTwoL.text
-        thirdArrowTF.text = roundOneArrowThreeL.text
+        firstArrowTF.text = roundNineArrowOneL.text
+        secondArrowTF.text = roundNineArrowTwoL.text
+        thirdArrowTF.text = roundNineArrowThreeL.text
         roundNumL.text = "Round \(roundNineButton.titleLabel?.text ?? "0")"
         currentRoundNum = 8
     }
   
     @IBAction func roundTenButtonPressed(sender: UIButton)
     {
-        firstArrowTF.text = roundOneArrowOneL.text
-        secondArrowTF.text = roundOneArrowTwoL.text
-        thirdArrowTF.text = roundOneArrowThreeL.text
+        firstArrowTF.text = roundTenArrowOneL.text
+        secondArrowTF.text = roundTenArrowTwoL.text
+        thirdArrowTF.text = roundTenArrowThreeL.text
         roundNumL.text = "Round \(roundTenButton.titleLabel?.text ?? "0")"
         currentRoundNum = 9
     }
@@ -249,12 +260,87 @@ class FullTableViewController: UIViewController {
         currentAllScores.allRounds[currentRoundNum][4] = Int(currentRoundLabels[4].text!)!
         
         print(currentAllScores.allRounds[currentRoundNum][4]) //"(currentAllScores.allRounds[currentRoundNum][4])"
+        
+        saveData()
     }
     
     
     @IBAction func bgdScreenTouched(_ sender: UITapGestureRecognizer)
     {
         view.endEditing(true)
+    }
+    
+    
+    func saveData()
+    {
+        if let encoded = try? JSONEncoder().encode(currentAllScores)
+        {
+            defaults.set(encoded, forKey: "data")
+        }
+    }
+    
+    func setAll()
+    {
+        roundOneArrowOneL.text = "\(currentAllScores.roundOneScores[0])"
+        roundOneArrowTwoL.text = "\(currentAllScores.roundOneScores[1])"
+        roundOneArrowThreeL.text = "\(currentAllScores.roundOneScores[2])"
+        roundOneTotalL.text = "\(currentAllScores.roundOneScores[3])"
+        postRoundOneTotalL.text = "\(currentAllScores.roundOneScores[4])"
+        
+        roundTwoArrowOneL.text = "\(currentAllScores.roundTwoScores[0])"
+        roundTwoArrowTwoL.text = "\(currentAllScores.roundTwoScores[1])"
+        roundTwoArrowThreeL.text = "\(currentAllScores.roundTwoScores[2])"
+        roundTwoTotalL.text = "\(currentAllScores.roundTwoScores[3])"
+        postRoundTwoTotalL.text = "\(currentAllScores.roundTwoScores[4])"
+        
+        roundThreeArrowOneL.text = "\(currentAllScores.roundThreeScores[0])"
+        roundThreeArrowTwoL.text = "\(currentAllScores.roundThreeScores[1])"
+        roundThreeArrowThreeL.text = "\(currentAllScores.roundThreeScores[2])"
+        roundThreeTotalL.text = "\(currentAllScores.roundThreeScores[3])"
+        postRoundThreeTotalL.text = "\(currentAllScores.roundThreeScores[4])"
+        
+        roundFourArrowOneL.text = "\(currentAllScores.roundFourScores[0])"
+        roundFourArrowTwoL.text = "\(currentAllScores.roundFourScores[1])"
+        roundFourArrowThreeL.text = "\(currentAllScores.roundFourScores[2])"
+        roundFourTotalL.text = "\(currentAllScores.roundFourScores[3])"
+        postRoundFourTotalL.text = "\(currentAllScores.roundFourScores[4])"
+        
+        roundFiveArrowOneL.text = "\(currentAllScores.roundFiveScores[0])"
+        roundFiveArrowTwoL.text = "\(currentAllScores.roundFiveScores[1])"
+        roundFiveArrowThreeL.text = "\(currentAllScores.roundFiveScores[2])"
+        roundFiveTotalL.text = "\(currentAllScores.roundFiveScores[3])"
+        postRoundFiveTotalL.text = "\(currentAllScores.roundFiveScores[4])"
+        
+        roundSixArrowOneL.text = "\(currentAllScores.roundSixScores[0])"
+        roundSixArrowTwoL.text = "\(currentAllScores.roundSixScores[1])"
+        roundSixArrowThreeL.text = "\(currentAllScores.roundSixScores[2])"
+        roundSixTotalL.text = "\(currentAllScores.roundSixScores[3])"
+        postRoundSixTotalL.text = "\(currentAllScores.roundSixScores[4])"
+        
+        roundSevenArrowOneL.text = "\(currentAllScores.roundSevenScores[0])"
+        roundSevenArrowTwoL.text = "\(currentAllScores.roundSevenScores[1])"
+        roundSevenArrowThreeL.text = "\(currentAllScores.roundSevenScores[2])"
+        roundSevenTotalL.text = "\(currentAllScores.roundSevenScores[3])"
+        postRoundSevenTotalL.text = "\(currentAllScores.roundSevenScores[4])"
+        
+        roundEightArrowOneL.text = "\(currentAllScores.roundEightScores[0])"
+        roundEightArrowTwoL.text = "\(currentAllScores.roundEightScores[1])"
+        roundEightArrowThreeL.text = "\(currentAllScores.roundEightScores[2])"
+        roundEightTotalL.text = "\(currentAllScores.roundEightScores[3])"
+        postRoundEightTotalL.text = "\(currentAllScores.roundEightScores[4])"
+        
+        roundNineArrowOneL.text = "\(currentAllScores.roundNineScores[0])"
+        roundNineArrowTwoL.text = "\(currentAllScores.roundNineScores[1])"
+        roundNineArrowThreeL.text = "\(currentAllScores.roundNineScores[2])"
+        roundNineTotalL.text = "\(currentAllScores.roundNineScores[3])"
+        postRoundNineTotalL.text = "\(currentAllScores.roundNineScores[4])"
+        
+        roundTenArrowOneL.text = "\(currentAllScores.roundTenScores[0])"
+        roundTenArrowTwoL.text = "\(currentAllScores.roundTenScores[1])"
+        roundTenArrowThreeL.text = "\(currentAllScores.roundTenScores[2])"
+        roundTenTotalL.text = "\(currentAllScores.roundTenScores[3])"
+        postRoundTenTotalL.text = "\(currentAllScores.roundTenScores[4])"
+        
     }
     
 
