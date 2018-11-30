@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C128408A21B1AC7C0070B753 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C128408921B1AC7C0070B753 /* IntroViewController.swift */; };
 		C13AF01321AF08F900445666 /* AllTheScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13AF01221AF08F900445666 /* AllTheScores.swift */; };
 		C1E55268219B430F0011377A /* FullTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E55267219B430F0011377A /* FullTableViewController.swift */; };
 		C1E6BDA62199EE2700403AE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6BDA52199EE2400403AE6 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C128408921B1AC7C0070B753 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		C13AF01221AF08F900445666 /* AllTheScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTheScores.swift; sourceTree = "<group>"; };
 		C1E55267219B430F0011377A /* FullTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTableViewController.swift; sourceTree = "<group>"; };
 		C1E6BDA22199EE2400403AE6 /* ArcheryScores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArcheryScores.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,7 @@
 				C1E6BDA72199EE2700403AE6 /* ViewController.swift */,
 				C1E55267219B430F0011377A /* FullTableViewController.swift */,
 				C13AF01221AF08F900445666 /* AllTheScores.swift */,
+				C128408921B1AC7C0070B753 /* IntroViewController.swift */,
 				C1E6BDA92199EE2700403AE6 /* Main.storyboard */,
 				C1E6BDAF2199EE2C00403AE6 /* Assets.xcassets */,
 				C1E6BDB12199EE2C00403AE6 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				C1E6BDA82199EE2700403AE6 /* ViewController.swift in Sources */,
 				C13AF01321AF08F900445666 /* AllTheScores.swift in Sources */,
 				C1E6BDAE2199EE2700403AE6 /* ArcheryScores.xcdatamodeld in Sources */,
+				C128408A21B1AC7C0070B753 /* IntroViewController.swift in Sources */,
 				C1E55268219B430F0011377A /* FullTableViewController.swift in Sources */,
 				C1E6BDA62199EE2700403AE6 /* AppDelegate.swift in Sources */,
 			);
