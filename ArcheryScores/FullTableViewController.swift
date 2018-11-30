@@ -359,6 +359,15 @@ class FullTableViewController: UIViewController {
         
     }
 
+    
+    @IBAction func resetButtonPressed(_ sender: UIButton)
+    {
+        let newAllScores = AllTheScores()
+        currentAllScores = newAllScores
+        setAll()
+    }
+    
+    
     /*
     // MARK: - Navigation
 
